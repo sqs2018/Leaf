@@ -6,8 +6,13 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.Properties;
 
+/***
+ * 配置文件加载类
+ */
 public class PropertyFactory {
+    //日志
     private static final Logger logger = LoggerFactory.getLogger(PropertyFactory.class);
+    //系统启动读取leaf.properties配置
     private static final Properties prop = new Properties();
     static {
         try {
